@@ -22,7 +22,12 @@ while(expediente)
             break;
         case "2":
             let nomeConsultado = filaInicial.shift()
-            alert(nomeConsultado + " foi consultado!\n")
+            if(typeof nomeConsultado == "string")
+            {
+                alert(nomeConsultado + " foi consultado!\n")
+            }else{
+                alert("A fila de pacientes está vazia!")
+            }
             break;
         case "0":
             alert ("Lista de espera:\n" + paciente);
