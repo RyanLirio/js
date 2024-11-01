@@ -22,7 +22,7 @@ while(expediente)
             break;
         case "2":
             let nomeConsultado = filaInicial.shift()
-            if(typeof nomeConsultado == "string")
+            if(typeof nomeConsultado == "string")//verifica se ele retira uma string, se não retirar é pq não tem mais ninguém na lista
             {
                 alert(nomeConsultado + " foi consultado!\n")
             }else{

@@ -1,4 +1,4 @@
-let maoInicial = ["Ás", 3, 5, 6, 2, "Rei", 2, "Valete", 4, "Ás", 2];
+let maoInicial = [];
 
 let partida = true;
 
@@ -19,7 +19,12 @@ while(partida)
             break;
         case "2":
             let cartaJogada = maoInicial.shift();
-            alert("Carta jogada: " + cartaJogada);
+            if(!cartaJogada)
+            {
+                alert("Você não tem nenhuma carta")
+            }else{
+                alert("Carta jogada: " + cartaJogada);
+            }
             break;
         case "0":
             partida = false;
