@@ -1,0 +1,38 @@
+/* Remove os pontinhos da lista */
+#tecnologiasLista {
+    list-style: none; /* Remove os bullets */
+    padding: 0;       /* Remove o recuo padrão */
+    margin: 0;        /* Remove margens padrão */
+}
+
+
+/* Personalização do campo de entrada */
+#tecnologiasLista input[type="text"] {
+    margin-left: 10px;  /* Adiciona espaço entre o texto e o input */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #007BFF; /* Azul claro */
+    color: white;             /* Texto branco */
+    border: none;             /* Sem bordas */
+    padding: 10px 15px;       /* Ajusta o espaçamento */
+    border-radius: 5px;       /* Arredonda as bordas */
+    cursor: pointer;          /* Muda o cursor ao passar por cima */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilo do formulário */
+form {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-family: 'Verdana', sans-serif;
+    color: #333; /* Cinza escuro */
+}
