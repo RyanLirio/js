@@ -6,7 +6,7 @@ let tabuleiro = [
     ["", "", ""], // Linha 2
     ["", "", ""]  // Linha 3
 ];
-
+let i = 0;
 
 document.getElementById('start').addEventListener('click', function(ev)
 {
@@ -23,8 +23,6 @@ document.getElementById('start').addEventListener('click', function(ev)
     vdq.innerText = jogadorDaVez;
     console.log(vdq.value)
 })
-
-
 
 document.querySelectorAll("button").forEach(function(botao) {
     botao.addEventListener("click", function(ev) {
@@ -65,6 +63,10 @@ document.querySelectorAll("button").forEach(function(botao) {
             alert(jogador2 + " ganhou!");
             // Você pode desabilitar os botões ou reiniciar o jogo
         }
+        if(vencedor === null && i === 9)
+            {
+                alert("Deu velha!")   
+            }
     });
 });
 
@@ -91,7 +93,40 @@ function verificarVencedor() {
     if (tabuleiro[0][2] !== "" && tabuleiro[0][2] === tabuleiro[1][1] && tabuleiro[1][1] === tabuleiro[2][0]) {
         return tabuleiro[0][2]; // Retorna "X" ou "O"
     }
-
+    i++;
     // Se não houver vencedor
     return null;
 }
+
+document.getElementById('restart').addEventListener('click', function(ev)
+{
+    jogador1 = '';
+    jogador2 = '';
+    jogadorDaVez = '';
+
+    let p1 = document.getElementById('adversario1');
+    p1.innerText = 'Player 1';
+    let p2 = document.getElementById('adversario2');
+    p2.innerText = 'Player 2';
+
+    const vdq = document.getElementById('vezDeQuem');
+    vdq.innerText = '';
+    console.log(vdq.value)
+
+    document.querySelectorAll('button').forEach(function(botao) {
+        
+        if (botao.classList.contains("naoAlterar")) {
+            return; // Sai da função e não muda o texto
+        }
+        if (botao.innerText !== "") {
+            botao.innerText = '';
+        }
+
+        tabuleiro = [
+            ["", "", ""], // Linha 1
+            ["", "", ""], // Linha 2
+            ["", "", ""]  // Linha 3
+        ];
+        i = 0;
+    })    
+})
