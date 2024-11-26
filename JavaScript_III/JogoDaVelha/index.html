@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="titulo">
+        <h1>Jogo da velha</h1>
+    </section>
+    
+    <table class="tabela">
+        <thead id="adversarios">
+            <tr>
+                <th id="adversario1">Player A</th>
+                <th id="x">x</th>
+                <th id="adversario2">Player B</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="i0">
+                <td><button data-linha="0" data-coluna="0"></button></td>
+                <td><button data-linha="0" data-coluna="1"></button></td>
+                <td><button data-linha="0" data-coluna="2"></button></td>
+                </tr>
+
+            <tr id="i1">
+                <td><button data-linha="1" data-coluna="0"></button></td>
+                <td><button data-linha="1" data-coluna="1"></button></td>
+                <td><button data-linha="1" data-coluna="2"></button></td>
+            </tr>
+            <tr id="i2">
+                <td><button data-linha="2" data-coluna="0"></button></td>
+                <td><button data-linha="2" data-coluna="1"></button></td>
+                <td><button data-linha="2" data-coluna="2"></button></td>
+            </tr>
+        </tbody>
+        <tfoot id="quemJoga">
+            <tr>    
+                <td>É a vez de:</td>
+                <td id="vezDeQuem"></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <section class="sectionBotao">
+        <button id="start" class="naoAlterar">Iniciar</button>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

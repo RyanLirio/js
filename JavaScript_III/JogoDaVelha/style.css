@@ -1,0 +1,75 @@
+.titulo h1
+{
+    text-align: center;
+}
+.tabela{
+    margin: 0 auto;
+    width: 50%; /* Ocupa toda a largura do container */
+    border-collapse: collapse; /* Remove espaços entre bordas */
+    font-size: 16px; /* Tamanho do texto */
+    font-family: Arial, sans-serif; /* Fonte da tabela */
+    background-color: rgb(29, 29, 36);/*pinta o fundo*/
+}
+.tabela thead tr
+{
+    background-color: #009879; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto do cabeçalho */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.tabela th, .tabela td
+{
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    width: 150px;
+    padding: 12px 15px; /* Espaçamento interno nas células */
+    border: 1px solid #dddddd; /* Borda leve nas células */
+}
+.tabela tbody tr
+{
+    border-bottom: 1px solid #dddddd; /* Linha separadora */
+}
+.tabela tfoot tr
+{
+    background-color: #009879; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Cor do texto do cabeçalho */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.tabela tfoot td
+{
+    border: none;
+}
+.tabela button
+{
+    width: 100%; /* Preenche a largura da célula */
+    height: 100%; /* Preenche a altura da célula */
+    border: none; /* Remove borda do botão */
+    background-color: rgb(29, 29, 36); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer;
+}
+.tabela button:hover
+{
+    background-color: #007a60;
+}
+.sectionBotao {
+    display: flex; /* Cria um contêiner flexível */
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px; /* Adiciona espaçamento acima do botão */
+}
+
+.sectionBotao button {
+    background-color: #009879; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Estilo do cursor ao passar sobre o botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.sectionBotao button:hover {
+    background-color: #007a60; /* Cor de fundo no hover */
+}
